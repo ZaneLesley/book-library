@@ -1,0 +1,95 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%;
+	font-family: "Courier New", Courier, monospace;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#book-dialog[open] {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+	height: 300px;
+}
+
+#book-dialog > li {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-rows: 1fr 5fr;
+	height: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.header > span {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.book-container {
+	background-color: rgba(128, 128, 128, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.book {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 10px;
+	margin: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	min-width: 220px;
+	min-height: 200px;
+
+	max-width: 50%;
+	max-height: 40%;
+}
+
+.book .flex-item {
+	display: flex;
+	width: 100%;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.book .flex-item:last-child {
+	gap: 10px;
+	margin-top: auto;
+}
+
+.book .flex-item:last-child > button {
+	width: 100%;
+}
+
+.book .flex-item > span {
+	width: 100%;
+}
