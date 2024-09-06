@@ -93,3 +93,17 @@ li {
 .book .flex-item > span {
 	width: 100%;
 }
+
+button {
+  background-color: #3EB2FD;
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
